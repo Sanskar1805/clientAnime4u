@@ -4,7 +4,7 @@ module.exports = function (app) {
   app.use(
     '/api',
     createProxyMiddleware({
-      target: 'http://localhost:8000',
+      target: 'https://serveranime4u-1.onrender.com',
       changeOrigin: true,
     })
   );

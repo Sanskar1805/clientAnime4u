@@ -16,7 +16,7 @@ function XYZPage() {
   useEffect(() => {
     const fetchAnime = async () => {
       try {
-        const response = await axios.get('http://localhost:8000/animes'); // Replace '/api/animes' with your API endpoint to retrieve anime data
+        const response = await axios.get('https://serveranime4u-1.onrender.com/animes'); // Replace '/api/animes' with your API endpoint to retrieve anime data
         setAnimeList(response.data);
       } catch (error) {
         console.error('Error fetching anime data:', error);

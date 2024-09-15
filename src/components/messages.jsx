@@ -36,7 +36,7 @@ const RefreshingComponent = () => {
  
     const fetchData = async () => {
       try {
-        const response = await axios.get('http://localhost:8000/chat'); // Replace '/api/animes' with your API endpoint to retrieve anime data
+        const response = await axios.get('https://serveranime4u-1.onrender.com/chat'); // Replace '/api/animes' with your API endpoint to retrieve anime data
         setChatList(response.data);
       } catch (error) {
         console.error('Error fetching chat data:', error);

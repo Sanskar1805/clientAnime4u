@@ -12,7 +12,7 @@ const Chat = ({ username }) => {
         e.preventDefault();
     
         try {
-          const response = await axios.post('http://localhost:8000/send', {
+          const response = await axios.post('https://serveranime4u-1.onrender.com/send', {
             name1,
             message1
           });
