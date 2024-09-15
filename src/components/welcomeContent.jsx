@@ -18,7 +18,7 @@ function WelcContent(){
     useEffect(() => {
       const fetchAnime = async () => {
         try {
-          const response = await axios.get('http://localhost:8000/animes'); // Replace '/api/animes' with your API endpoint to retrieve anime data
+          const response = await axios.get('https://serveranime4u-1.onrender.com/animes'); // Replace '/api/animes' with your API endpoint to retrieve anime data
           setAnimeList(response.data);
         } catch (error) {
           console.error('Error fetching anime data:', error);
@@ -69,7 +69,6 @@ function WelcContent(){
     </div>
     <AnimeGrid userName={username2}  pictures = {pictures} name = {names} board = "1" heading = "Top Rated Animes" bgCol = "bg-dark" />
     <AnimeGrid userName={username2}  pictures = {pictures2} name = {names2} board = "1" heading = "Action Animes" bgCol = "bg-dark" />
-    <AnimeGrid userName={username2}  pictures = {pictures3} name = {names3} board = "1" heading = "Adventure Animes" bgCol = "bg-dark" />
     </div>;
 
 }
