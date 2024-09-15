@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "serve": "^14.0.1",
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
     "@mui/icons-material": "^5.11.16",
@@ -42,5 +43,8 @@
   },
   "devDependencies": {
     "http-proxy-middleware": "^2.0.6"
-  }
+  },
+  "engines": {
+  "node": ">=14.x"
+}
 }
