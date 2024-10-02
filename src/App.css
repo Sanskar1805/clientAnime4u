@@ -35,21 +35,25 @@
 
 .chat-footer {
   padding: 16px;
-  bottom:0;
-  right:0;
-  left:0;
+  bottom: 0;
+  right: 0;
+  left: 0;
   position: absolute;
   background-color: #ccc;
 }
 
-
+/* Navbar styling */
 .navbar {
   position: fixed;
   width: 100%;
   z-index: 9999;
   top: 0;
   left: 0;
-  /* Additional styles for the navbar */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden; /* Prevent overflow */
+  background-color: #343a40; /* Example background color */
 }
 
 .container {
@@ -58,7 +62,6 @@
 
 .content {
   margin-top: 70px; /* Adjust the value based on the height of your navbar */
-  /* Additional styles for the content */
 }
 
 .grid {
@@ -68,7 +71,6 @@
 
 .grid-item {
   width: 50%;
-  /* Additional styles for grid items */
 }
 
 @media (max-width: 1200px) {
@@ -76,7 +78,6 @@
     width: 100%;
   }
 }
-
 
 .App-header {
   background-color: #282c34;
@@ -99,5 +100,102 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+/* Base styling for navbar elements */
+.navbar-brand {
+  font-size: 30px; /* Keep large font for desktop */
+  white-space: nowrap; /* Prevent brand text wrapping */
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center; /* Align items centrally */
+  gap: 10px; /* Adjusted gap for better spacing */
+  flex-grow: 1; /* Allow links to take up available space */
+  justify-content: flex-end; /* Align items to the end */
+}
+
+.form-control {
+  width: 100px; /* Adjust width for mobile */
+  margin: 0; /* Remove margin to avoid overflow */
+}
+
+/* Mobile-specific adjustments */
+@media (max-width: 768px) {
+  .navbar {
+    flex-wrap: nowrap; /* Prevent wrapping */
+    justify-content: space-between; /* Space out items to prevent overflow */
+  }
+
+  .navbar-brand {
+    font-size: 18px; /* Smaller font on mobile */
+  }
+
+  .navbar-links {
+    gap: 10px; /* Consistent gap for mobile */
+  }
+
+  .form-control {
+    width: 80px; /* Reduce input width for mobile */
+  }
+
+  .search-icon-btn {
+    padding: 0; /* Remove padding for tighter layout on mobile */
+    background: none; /* Remove background */
+    border: none; /* Remove border */
+  }
+
+  /* Make icon sizes smaller */
+  .navbar-links a, .navbar-links button {
+    font-size: 24px; /* Consistent icon size */
+    margin: 0; /* Remove margin */
+  }
+}
+
+/* Add this to your existing CSS */
+.navbar-title {
+  display: inline; /* Show on desktop */
+}
+
+/* Mobile-specific adjustments */
+@media (max-width: 768px) {
+  .navbar-title {
+    display: none; /* Hide on mobile */
+  }
+}
+
+/* Search button styling */
+.search-btn {
+  display: flex;
+  align-items: center;
+  background: transparent; /* Or your preferred background color */
+  border: 1px solid #28a745; /* Match Bootstrap's btn-outline-success */
+  color: #28a745; /* Match Bootstrap's btn-outline-success text color */
+  padding: 5px 10px; /* Adjust padding as needed */
+  cursor: pointer;
+}
+
+/* Hide the search text on mobile */
+.mobile-search {
+  display: none; /* Hidden by default */
+}
+
+.desktop-search {
+  display: inline; /* Show on desktop */
+}
+
+/* Mobile-specific adjustments */
+@media (max-width: 768px) {
+  .desktop-search {
+    display: none; /* Hide on mobile */
+  }
+  .mobile-search {
+    display: inline; /* Show on mobile */
+  }
+
+  .search-btn {
+    padding: 0; /* Remove padding for tighter layout on mobile */
   }
 }

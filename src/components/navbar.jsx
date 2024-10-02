@@ -1,48 +1,50 @@
-import React,{useState} from "react";
+import React, { useState } from "react";
 import image from './otaku.png';
 import { Link } from 'react-router-dom';
-import Button from '@mui/material/Button';
-import { Home, Search,Forum,Login,AppRegistration} from '@mui/icons-material';
+import { Home, Forum, Login, AppRegistration, Search as SearchIcon } from '@mui/icons-material';
 import Chat from './chat';
 
-
-function NavBar({bgCol,textCol,userName}){
-  const existingClasses = "navbar border-bottom border-bottom-dark ";
-  const modifiedClasses = `${existingClasses} ${bgCol}`;
+function NavBar({ bgCol, textCol, userName }) {
   const [isChatVisible, setChatVisible] = useState(false);
+  const [searchText, setSearchText] = useState('');
 
   const toggleChatVisibility = () => {
     setChatVisible(!isChatVisible);
   };
 
-  const [searchText, setSearchText] = useState('');
-  
-
-  const handleSearch = () => {
+  const handleSearch = (e) => {
+    e.preventDefault(); // Prevent default form submission
     window.location.href = `/components/xyz?search=${searchText}`;
-    // Navigate to the XYZ page with the search text as a query parameter
-    
   };
- 
 
-    return <nav class={modifiedClasses}  data-bs-theme="dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" style = {{color : `${textCol}`,fontFamily:"Righteous",fontSize:"30px"}}><img src= {image} style = {{width: "30px", height :"30px"}} alt = "" />Anime4u </a>
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
+  return (
+    <nav className={`navbar border-bottom border-bottom-dark ${bgCol}`} data-bs-theme="dark">
+      <div className="container-fluid">
+        <a className="navbar-brand" style={{ color: textCol, fontFamily: "Righteous", fontSize: "30px" }}>
+          <img src={image} style={{ width: "30px", height: "30px", marginRight: "10px" }} alt="" />
+          <span className="navbar-title">Anime4u</span>
+        </a>
+        <div className="navbar-links">
+          <a className="nav-link active" aria-current="page" style={{ color: "white" }} href="/"><Home /></a>
+          <a className="nav-link active" aria-current="page" style={{ color: "white" }} href="/components/register"><AppRegistration /></a>
+          <a className="nav-link active" aria-current="page" style={{ color: "white" }} href="/components/login"><Login /></a>
+          <button onClick={toggleChatVisibility} style={{ background: "none", border: "none", color: "white" }}><Forum /></button>
+          {isChatVisible && <Chat username={userName} />}
+        </div>
+        <form className="d-flex" role="search" style={{ display: 'flex', alignItems: 'center', gap: '5px' }} onSubmit={handleSearch}>
+          <input className="form-control" type="search" value={searchText} placeholder="Search" aria-label="Search" onChange={(e) => setSearchText(e.target.value)} />
           
-        </li></ul>
-        <a class="nav-link active" aria-current="page" style  = {{color:"white"}} href="/"><Home x={{ fontSize: 50 }} /></a>
-        <a class="nav-link active" aria-current="page" style  = {{color:"white"}} href="/components/register"><AppRegistration x={{ fontSize: 50 }} /></a>
-        <a class="nav-link active" aria-current="page" style  = {{color:"white"}} href="/components/login"><Login x={{ fontSize: 50 }} /></a>
-        <button onClick={toggleChatVisibility} style = {{background:"none",border:"none", marginRight:"10px", color:"white"}}><Forum /></button>
-        {isChatVisible && <Chat username= {userName}/>}
-        
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" value = {searchText} placeholder="Search" aria-label="Search" onChange={(e) => setSearchText(e.target.value)} />
-        <Link to={`/xyz?search=${searchText}`}><button class="btn btn-outline-success" type="submit" onClick={handleSearch}>Search</button></Link>
-      </form>
-    </div>
-    </nav>;
+          {/* Conditional rendering for search button */}
+          <button type="submit" className="search-btn">
+            {/* This will show button text on desktop */}
+            <span className="desktop-search">Search</span>
+            {/* This will show icon on mobile */}
+            <span className="mobile-search"><SearchIcon /></span>
+          </button>
+        </form>
+      </div>
+    </nav>
+  );
 }
+
 export default NavBar;
