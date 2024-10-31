@@ -4,9 +4,10 @@ import axios from "axios";
 import Carousel from './carousel';
 import React, { useState, useEffect } from "react";
 import { Add } from '@mui/icons-material';
+import dataAnime from "./../animeData.json";
 
 function AnimeDetails() {
-  const [animeList, setAnimeList] = useState([]);
+  const [animeList, setAnimeList] = useState(dataAnime);
   const [toggle, setToggle] = useState(false);
   const [review, setReview] = useState("");
   const [revs, setRevs] = useState([]);  // Keep track of reviews

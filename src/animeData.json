@@ -1,0 +1,216 @@
+[
+    {
+      "_id": { "$oid": "647c75d8880ff63c93caaabd" },
+      "name": "Naruto",
+      "genre": ["Action", "Adventure"],
+      "pictures": [
+        "https://c4.wallpaperflare.com/wallpaper/738/62/544/naruto-chidori-naruto-naruto-uzumaki-rasengan-naruto-sasuke-uchiha-hd-wallpaper-preview.jpg",
+        "https://c4.wallpaperflare.com/wallpaper/562/750/513/uzumaki-naruto-uchiha-sasuke-naruto-shippuuden-wallpaper-preview.jpg",
+        "https://c4.wallpaperflare.com/wallpaper/591/238/424/naruto-shippuuden-uzumaki-naruto-uchiha-sasuke-rinnegan-wallpaper-preview.jpg",
+        "https://c4.wallpaperflare.com/wallpaper/257/777/256/naruto-shippuuden-uzumaki-naruto-uchiha-sasuke-kurama-wallpaper-preview.jpg"
+      ],
+      "desc": "Naruto Uzumaki, a mischievous adolescent ninja, struggles as he searches for recognition and dreams of becoming the Hokage, the village's leader and strongest ninja.",
+      "ratings": 8.6,
+      "userReviews": ["Believe it!", "The best ninja anime"],
+      "cast": ["Naruto Uzumaki", "Sasuke Uchiha", "Kakashi Hatake"],
+      "episodes": 500
+    },
+    {
+      "_id": { "$oid": "64a3f55eadfb44f8fbedcbf4" },
+      "id": { "$oid": "647c7702880ff63c93caaabe" },
+      "name": "Demon Slayer",
+      "genre": ["Action", "Supernatural", "Drama"],
+      "pictures": [
+        "https://images.immediate.co.uk/production/volatile/sites/3/2022/10/MV5BOGZmYjkxMDItNmQ3ZC00YzdlLThjMDktYWJkOGZiOWU1NmY0XkEyXkFqcGdeQXVyMTA3MzQ4MTcw.V1-f69daeb.jpg",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLXNJypAlzerDdPi7uyIGcBpZ1ltXNvw8LLQ&usqp=CAU",
+        "https://e0.pxfuel.com/wallpapers/377/24/desktop-wallpaper-anime-demon-slayer-kimetsu-no-yaiba-zenitsu-%E2%80%A2-for-you-for-mobile-demon-slayer-characters.jpg",
+        "https://www.spieltimes.com/wp-content/uploads/2023/04/CP-of-DS-artcle-jpeg.jpg"
+      ],
+      "desc": "A family is attacked by demons and only two members survive - Tanjiro and his sister Nezuko, who is turning into a demon slowly. Tanjiro sets out to become a demon slayer to avenge his family and cure his sister.",
+      "ratings": 8.9,
+      "userReviews": [
+        "Stunning animation!",
+        "Epic battles",
+        "tanjiro is my fav character",
+        "i love it",
+        "i love it",
+        "i love demon slayer",
+        "i love demon slayer",
+        "i love demon slayer",
+        "i love demon slayer",
+        "i love demon slayer",
+        "i love demon slayer"
+      ],
+      "cast": ["Tanjiro Kamado", "Nezuko Kamado", "Zenitsu Agatsuma"],
+      "episodes": 26,
+      "_v": 1,
+      "__v": 8
+    },
+    {
+      "_id": { "$oid": "64a3f55eadfb44f8fbedcbf5" },
+      "id": { "$oid": "647ccd624d57e812c11757e8" },
+      "name": "Death Note",
+      "genre": ["Mystery", "Psychological", "Thriller"],
+      "pictures": [
+        "https://images2.alphacoders.com/139/thumbbig-13992.webp",
+        "https://wallpapercave.com/wp/wp5623130.jpg",
+        "https://cutewallpaper.org/21/death-note-wallpaper-hd/Death-Note-Wallpapers-Wallpaper-Cave.jpg",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTaqEKckgZ_j_v_bKzrQoif4uFFDsJP0GnU_Rcvk2cRHjQ8_8trPZgzcfaNEh0b1vybnw&usqp=CAU"
+      ],
+      "desc": "An intelligent high school student goes on a secret crusade to eliminate criminals from the world after discovering a notebook capable of killing anyone whose name is written into it.",
+      "ratings": 9,
+      "userReviews": ["Great anime!", "One of my favorites", "Dark and Awesome", "Mind Blowing"],
+      "cast": ["Light Yagami", "L", "Ryuk"],
+      "episodes": 37,
+      "_v": 2
+    },
+    {
+      "_id": { "$oid": "647cdc104d57e812c11757e9" },
+      "name": "One Piece",
+      "genre": ["Action", "Adventure", "Comedy", "Drama", "Fantasy"],
+      "pictures": [
+        "https://wallpaperaccess.com/full/17350.jpg",
+        "https://wallpapers.com/images/featured/idg4aqn5l0lh40dk.jpg",
+        "https://wallpaperset.com/w/full/6/e/5/490769.jpg",
+        "https://w0.peakpx.com/wallpaper/471/895/HD-wallpaper-luffy-one-piece-wano-arc.jpg"
+      ],
+      "desc": "Follows the adventures of Monkey D. Luffy and his pirate crew in order to find the greatest treasure ever left by the legendary Pirate, Gold Roger. The famous mystery treasure named 'One Piece'.",
+      "ratings": 8.7,
+      "userReviews": ["Awesome anime!", "Great characters and story"],
+      "cast": ["Monkey D. Luffy", "Roronoa Zoro", "Nami"],
+      "episodes": 1000
+    },
+    {
+      "_id": { "$oid": "64a3f55eadfb44f8fbedcbf6" },
+      "id": { "$oid": "647cdd004d57e812c11757ea" },
+      "name": "Haikyuu",
+      "genre": ["Sports", "Comedy", "Drama"],
+      "pictures": [
+        "https://c4.wallpaperflare.com/wallpaper/430/354/442/haikyuu-haikyuu-hinata-shouyou-kageyama-tobio-azumane-asahi-hd-wallpaper-preview.jpg",
+        "https://c4.wallpaperflare.com/wallpaper/819/499/757/haikyuu-anime-boys-hinata-shouyou-kageyama-tobio-wallpaper-preview.jpg",
+        "https://c4.wallpaperflare.com/wallpaper/374/679/630/haikyuu-anime-boys-hinata-shouyou-kageyama-tobio-wallpaper-preview.jpg",
+        "https://c4.wallpaperflare.com/wallpaper/343/468/889/haikyuu-anime-boys-hinata-shouyou-kageyama-tobio-wallpaper-preview.jpg",
+        "https://c4.wallpaperflare.com/wallpaper/591/433/109/hinata-shouyou-tanaka-ry%C5%ABnosuke-sawamura-daichi-haikyuu-wallpaper-preview.jpg"
+      ],
+      "desc": "Determined to be like the volleyball championship's star player nicknamed 'the small giant', Shoyo joins his school's volleyball club.",
+      "ratings": 8.9,
+      "userReviews": [
+        "Amazing sports anime!",
+        "Great character development",
+        "Learned basketball by watching this!",
+        "Just can't stop watching this anime",
+        "One of my favourites"
+      ],
+      "cast": ["Shoyo Hinata", "Tobio Kageyama", "Kei Tsukishima"],
+      "episodes": 85,
+      "_v": 3
+    },
+    {
+        "_id": "647cdde44d57e812c11757eb",
+        "name": "Fullmetal Alchemist",
+        "genre": ["Action", "Adventure", "Drama", "Fantasy"],
+        "pictures": [
+          "https://c4.wallpaperflare.com/wallpaper/963/106/331/fullmetal-alchemist-fullmetal-alchemist-edward-elric-riza-hawkeye-wallpaper-preview.jpg",
+          "https://c4.wallpaperflare.com/wallpaper/485/636/958/fullmetal-alchemist-fullmetal-alchemist-hd-wallpaper-preview.jpg",
+          "https://c4.wallpaperflare.com/wallpaper/375/733/129/full-metal-alchemist-brotherhood-wallpaper-preview.jpg",
+          "https://w0.peakpx.com/wallpaper/498/537/HD-wallpaper-movie-fullmetal-alchemist.jpg"
+        ],
+        "desc": "Two brothers search for a Philosopher's Stone after an attempt to revive their deceased mother goes awry and leaves them in damaged physical forms.",
+        "ratings": 9.1,
+        "userReviews": [
+          "Masterpiece!",
+          "Incredible story and characters",
+          "love it",
+          "love it",
+          "love it",
+          "love it",
+          "love it",
+          "love it",
+          "love it"
+        ],
+        "cast": ["Edward Elric", "Alphonse Elric", "Roy Mustang"],
+        "episodes": 64,
+        "__v": 7
+      },
+      {
+        "_id": "64a3f55eadfb44f8fbedcbf7",
+        "id": "647cdedd4d57e812c11757ed",
+        "name": "Blue Lock",
+        "genre": ["Sports", "Drama", "Psychological"],
+        "pictures": [
+          "https://cdn.wallpapersafari.com/90/62/akHyIV.jpg",
+          "https://e0.pxfuel.com/wallpapers/131/956/desktop-wallpaper-rix-blue-lock.jpg",
+          "https://wallpaperaccess.com/full/8675666.png",
+          "https://cdn.wallpapersafari.com/47/90/rHXDNv.jpg"
+        ],
+        "desc": "High school soccer players from across Japan gather for a controversial project designed to create the best and most egoistic striker in the world.",
+        "ratings": 8.5,
+        "userReviews": [
+          "Intense and gripping!",
+          "Unique concept and great characters",
+          "Rin >>> ronaldo"
+        ],
+        "cast": ["Yoichi Isagi", "Reo Mikage", "Rensuke Kunigami"],
+        "episodes": 22,
+        "__v": 1
+      },
+      {
+        "_id": "647cdfa84d57e812c11757ee",
+        "name": "Hunter x Hunter",
+        "genre": ["Action", "Adventure", "Fantasy"],
+        "pictures": [
+          "https://wallpapers.com/images/hd/hunter-x-hunter-gon-killua-leorio-and-kurapika-tck8prcwqau1see7.jpg",
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3IWis3a0gIJJyd0hdBHkoJXnpC9JgVSFw4w&usqp=CAU",
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuF5jFEZUQYpQRx5WolNNmxeeE_lsuCz98sQ&usqp=CAU",
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7WZcjnAlKjadSOKe8tSK3TMO2iQaMp8MnwA&usqp=CAU"
+        ],
+        "desc": "Gon Freecss aspires to become a Hunter, an exceptional being capable of greatness. With his friends and his potential, he seeks out his father, who left him when he was younger.",
+        "ratings": 9.1,
+        "userReviews": [
+          "One of the best anime ever!",
+          "Engaging plot and memorable characters",
+          "i binge watched the whole series"
+        ],
+        "cast": ["Gon Freecss", "Killua Zoldyck", "Kurapika"],
+        "episodes": 148,
+        "__v": 1
+      },
+      {
+        "_id": "64a3f55eadfb44f8fbedcbf8",
+        "id": "647ce07e4d57e812c11757ef",
+        "name": "My Hero Academia",
+        "genre": ["Action", "Superhero", "Comedy"],
+        "pictures": [
+          "https://w0.peakpx.com/wallpaper/191/702/HD-wallpaper-izuku-midoriya-cool-my-hero-academia.jpg",
+          "https://i.pinimg.com/736x/6b/b8/cc/6bb8ccb48209db709e680233e8856986.jpg",
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVu6U8WGezY0tpMvs_PpUMniaeDj8qxSXXPw&usqp=CAU",
+          "https://wallpapers.com/images/featured/mha-a215fibxwa98k84n.jpg"
+        ],
+        "desc": "A superhero-loving boy without any powers is determined to enroll in a prestigious hero academy and learn what it really means to be a hero.",
+        "ratings": 8.7,
+        "userReviews": [
+          "Awesome superhero anime!",
+          "Exciting battles and lovable characters",
+          "Midoriya is my favourite character"
+        ],
+        "cast": ["Izuku Midoriya", "Katsuki Bakugo", "All Might"],
+        "episodes": 113,
+        "__v": 1
+      },
+      {
+        "_id": "647ce12e4d57e812c11757f0",
+        "name": "Attack on Titan",
+        "genre": ["Action", "Drama", "Fantasy"],
+        "pictures": [
+          "https://wallpapers.com/images/featured/cgne5utew41lgbjp.jpg",
+          "https://i.pinimg.com/originals/7a/0d/c2/7a0dc24f568b81a39ba1ce797f65d355.jpg",
+          "https://images6.alphacoders.com/451/451608.jpg",
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHvwgDYg2T57rP_Gvp_130O0HuRTPJJtFX5A&usqp=CAU"
+        ],
+        "desc": "After his hometown is destroyed and his mother is killed, young Eren Jaeger vows to cleanse the earth of the giant humanoid Titans that have brought humanity to the brink of extinction.",
+        "ratings": 9,
+        "userReviews": ["Epic and intense!", "Mind-blowing plot twists"],
+        "cast": ["Eren Yeager", "Mikasa Ackerman", "Levi Ackerman"],
+        "episodes": 75
+      }
+    ]

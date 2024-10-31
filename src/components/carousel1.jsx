@@ -1,16 +1,20 @@
 import React from "react";
+import HomePageVideo from "./homeVideo";
 
 function CarouselOne(){
-    return <div id="carouselExampleRide" class="carousel slide" data-bs-ride="carousel">
+    const url1 = "https://www.youtube.com/watch?v=k_CxMefC7mA";
+    const url2 = "https://www.youtube.com/watch?v=9hNOAMFPoBc";
+    const url3 = "https://www.youtube.com/watch?v=thMXb5r792s";
+    return <div id="carouselExampleRide" class="carousel " data-bs-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="https://c4.wallpaperflare.com/wallpaper/295/163/719/anime-anime-boys-picture-in-picture-kimetsu-no-yaiba-kamado-tanjir%C5%8D-hd-wallpaper-preview.jpg" class="d-block w-100" alt="..." />
+        <HomePageVideo url = {url1} mute = {false}/>
       </div>
       <div class="carousel-item">
-        <img src="https://c4.wallpaperflare.com/wallpaper/470/652/917/anime-naruto-naruto-uzumaki-sasuke-uchiha-wallpaper-preview.jpg" class="d-block w-100" alt="..." />
+        <HomePageVideo url = {url2} mute = {true} />
       </div>
       <div class="carousel-item">
-        <img src="https://c4.wallpaperflare.com/wallpaper/751/338/401/anime-anime-girls-white-hair-long-hair-wallpaper-preview.jpg" class="d-block w-100" alt="..." />
+        <HomePageVideo url = {url3} mute = {true} />
       </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">

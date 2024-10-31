@@ -21,11 +21,12 @@ const AnimeGrid = (props) => {
     <div style={{ display: 'flex' }}>
       {combinedEle.map((ele, index) => (
         <div key={index} style={{ marginRight: '10px' }}>
-          <div style = {{marginLeft:"10px" , marginRight: "10px"}} ><img
+          <div style = {{marginLeft:"10px" , marginRight: "10px"}} >
+          <Link to={`/components/animeDetails/${encodeURIComponent(ele.name)}`} className='text-light' style = {{textDecoration:"none" ,fontFamily : "Jost"}}><img
             src={ele.picture}
             alt={`Anime ${index + 1}`}
             style={{ width: '300px', height: '200px' , marginBottom:'10px'}}
-          /></div>
+          /></Link></div>
           <div className='bg-warning' ><center><h5  style = {{fontFamily : "Jost"}}><Link to={`/components/animeDetails/${encodeURIComponent(ele.name)}`} className='text-light' style = {{textDecoration:"none" ,fontFamily : "Jost"}}>{ele.name}</Link></h5></center></div>
         </div>
       ))}

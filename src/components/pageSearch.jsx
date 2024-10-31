@@ -4,13 +4,14 @@ import NavBar from './navbar';
 import axios from 'axios';
 import {useEffect,useState} from 'react';
 import AnimeGrid from './animeGrid';
+import dataAnime from './../animeData.json';
 
 function XYZPage() {
   const location = useLocation();
   const searchQuery = new URLSearchParams(location.search).get('search');
   const sQ2 = searchQuery.toLowerCase();
 
-  const [animeList, setAnimeList] = useState([]);
+  const [animeList, setAnimeList] = useState(dataAnime);
   
 
   useEffect(() => {

@@ -6,14 +6,14 @@ import NavBar from "./navbar";
 import axios from "axios"
 import React, { useState , useEffect} from "react";
 import { Link, useLocation } from "react-router-dom";
+import dataAnime from "./../animeData.json";
 
 
 
-
-
+//"start": "serve -s build -l 3000", for deployment
 function WelcContent(){
 
-    const [animeList, setAnimeList] = useState([]);
+    const [animeList, setAnimeList] = useState(dataAnime);
 
     useEffect(() => {
       const fetchAnime = async () => {
@@ -63,12 +63,10 @@ function WelcContent(){
     return <div class = 'bg-dark'>
     {/*<div style = {{fontFamily : "Righteous" , backgroundColor : "beige" }} class= "p-3"><center><h1 style = {{fontSize : "50px"}}><img src= {image} style = {{width: "60px", height :"60px"}} alt = "" /> Anime4u</h1></center></div>*/}
     <NavBar bgCol = "bg-warning" textCol="white" userName = {username2} />
-    <div class="row bg-dark grid content" style = {{backgroundColor:"white"}}>
-        <div class="col-6 grid-item" style = {{paddingLeft: "2%" , paddingRight: "2%"}} md={6}><WelText /></div>
-        <div class="col-6 grid-item" style = {{paddingTop : "3%", paddingLeft: "2%" , paddingRight: "2%"}} md={6}><CarouselOne /></div>
-    </div>
+    <div class=" bg-dark" style = {{paddingTop : "4%", backgroundColor:"white"}}><CarouselOne /></div>
     <AnimeGrid userName={username2}  pictures = {pictures} name = {names} board = "1" heading = "Top Rated Animes" bgCol = "bg-dark" />
     <AnimeGrid userName={username2}  pictures = {pictures2} name = {names2} board = "1" heading = "Action Animes" bgCol = "bg-dark" />
+    <AnimeGrid userName={username2} pictures={pictures3} name={names3} board="1" heading="Adventure Animes" bgCol="bg-dark" />
     </div>;
 
 }
